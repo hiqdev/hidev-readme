@@ -1,0 +1,55 @@
+{
+    "name": "hiqdev/hidev-readme",
+    "type": "yii2-extension",
+    "description": "README plugin for HiDev",
+    "keywords": [
+        "readme",
+        "hidev",
+        "plugin"
+    ],
+    "homepage": "https://github.com/hiqdev/hidev-readme",
+    "license": "BSD-3-Clause",
+    "support": {
+        "email": "support@hiqdev.com",
+        "source": "https://github.com/hiqdev/hidev-readme",
+        "issues": "https://github.com/hiqdev/hidev-readme/issues",
+        "wiki": "https://github.com/hiqdev/hidev-readme/wiki",
+        "forum": "http://forum.hiqdev.com/hidev"
+    },
+    "authors": [
+        {
+            "name": "Andrii Vasyliev",
+            "role": "Project lead",
+            "email": "sol@hiqdev.com",
+            "homepage": "http://hipanel.com/"
+        },
+        {
+            "name": "Dmitry Naumenko",
+            "role": "Lead backend developer",
+            "email": "silverfire@hiqdev.com",
+            "homepage": "http://silverfire.me/"
+        },
+        {
+            "name": "Andrey Klochok",
+            "role": "Lead frontend developer",
+            "email": "tafid@hiqdev.com",
+            "homepage": "http://hiqdev.com/"
+        },
+        {
+            "name": "Yuriy Myronchuk",
+            "role": "QA Lead",
+            "email": "bladeroot@hiqdev.com",
+            "homepage": "http://hiqdev.com/"
+        }
+    ],
+    "require-dev": {
+        "hiqdev/hidev": "*@dev",
+        "minii/core": "*",
+        "hiqdev/yii2-pluginmanager": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "hidev\\readme\\": "src"
+        }
+    }
+}
