@@ -76,19 +76,24 @@ class ReadmeGoal extends TemplateGoal
     {
         $view = Yii::$app->getView();
         $tpl = Helper::file2template($file);
+        try {
+            $res = $view->render($tpl, ['config' => $this->config]);
+        } catch (\Exception $e) {
+            $res = '';
+        }
 
-        return $view->existsTemplate($tpl) ? $view->render($tpl, ['config' => $this->config]) : $default;
+        return $res ?: $default;
     }
 
     public function getSections()
     {
-        return $this->getItem('sections') ?: ['Requirements', 'Installation', 'Configuration', 'Basic Usage', 'Usage', 'Support', 'License', 'Acknowledgments'];
+        return $this->getItem('sections') ?: ['Requirements', 'Installation', 'Idea', 'Configuration', 'Basic Usage', 'Usage', 'Support', 'License', 'Acknowledgments'];
     }
 
     public function renderSections($sections = null)
     {
         if ($sections === null) {
-            $sections = $this->sections;
+            $sections = $this->getSections();
         }
         $res = '';
         foreach ($sections as $section) {
@@ -114,7 +119,7 @@ class ReadmeGoal extends TemplateGoal
         if (!$badges) {
             return '';
         }
-        if (!$this->package->getPackageManager()->getConfigFile()->getRequire()) {
+        if (!$this->package->getPackageManager()->getConfiguration()->getRequire()) {
             unset($badges['versioneye.dependencies']);
         }
         $res = '';

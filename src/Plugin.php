@@ -23,6 +23,7 @@ class Plugin extends \hiqdev\pluginmanager\Plugin
      */
     protected $_items = [
         'goals' => [
+            'readme'           => 'hidev\readme\goals\ReadmeGoal',
             'README'           => 'hidev\readme\goals\ReadmeGoal',
             'README.md'        => 'hidev\readme\goals\ReadmeGoal',
             'README.txt'       => 'hidev\readme\goals\ReadmeGoal',
