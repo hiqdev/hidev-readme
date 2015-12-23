@@ -4,6 +4,7 @@ hiqdev/hidev-readme commits history
 ## Under development
 
 - Added distributed `markdownBadges` instead of local knownBadges
+    - 53dec73 2015-12-23 fixed build (sol@hiqdev.com)
     - 9d67663 2015-12-23 added distributed `markdownBadges` instead of local knownBadges (sol@hiqdev.com)
 - Added text README generation
     - aeaf746 2015-12-23 + text README generation (sol@hiqdev.com)
