@@ -3,6 +3,11 @@ hiqdev/hidev-readme commits history
 
 ## Under development
 
+
+## 0.2.0 2015-12-23
+
+- Added Travis `after_script` to upload coverage to Scrutinizer
+    - f149c5f 2015-12-23 + Travis `after_script` to upload coverage to Scrutinizer (sol@hiqdev.com)
 - Added distributed `markdownBadges` instead of local knownBadges
     - 53dec73 2015-12-23 fixed build (sol@hiqdev.com)
     - 9d67663 2015-12-23 added distributed `markdownBadges` instead of local knownBadges (sol@hiqdev.com)
