@@ -1,7 +1,7 @@
 <?php
 
 /*
- * Scrutinizer plugin for HiDev
+ * README plugin for HiDev
  *
  * @link      https://github.com/hiqdev/hidev-readme
  * @package   hidev-readme

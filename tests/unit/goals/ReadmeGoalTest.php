@@ -32,11 +32,6 @@ class ReadmeGoalTest extends \PHPUnit_Framework_TestCase
     {
     }
 
-    public function testGetTemplate()
-    {
-        $this->assertSame('README', $this->object->getTemplate());
-    }
-
     public function testRenderH1()
     {
         $this->assertSame("Test\n====\n", $this->object->renderH1('Test'));
