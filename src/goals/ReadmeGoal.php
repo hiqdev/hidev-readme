@@ -20,10 +20,7 @@ use Yii;
  */
 class ReadmeGoal extends TemplateGoal
 {
-    public function getTemplate()
-    {
-        return 'README';
-    }
+    protected $_twig;
 
     public function getCharset()
     {
@@ -87,7 +84,7 @@ class ReadmeGoal extends TemplateGoal
 
     public function getSections()
     {
-        return $this->getItem('sections') ?: ['Requirements', 'Installation', 'Idea', 'Configuration', 'Basic Usage', 'Usage', 'Support', 'License', 'Acknowledgments'];
+        return $this->sections ?: ['Requirements', 'Installation', 'Idea', 'Configuration', 'Basic Usage', 'Usage', 'Support', 'License', 'Acknowledgments'];
     }
 
     public function renderSections($sections = null)
@@ -103,16 +100,6 @@ class ReadmeGoal extends TemplateGoal
         return $res;
     }
 
-    public $known_badges = [
-        'github.version'          => '[![GitHub version](https://badge.fury.io/gh/{{ config.github.vendor }}%2F{{ config.github.package }}.svg)](https://badge.fury.io/gh/{{ config.github.vendor }}%2F{{ config.github.package }})',
-        'packagist.stable'        => '[![Latest Stable Version](https://poser.pugx.org/{{ config.composer.fullName }}/v/stable)](https://packagist.org/packages/{{ config.composer.fullName }})',
-        'packagist.unstable'      => '[![Latest Unstable Version](https://poser.pugx.org/{{ config.composer.fullName }}/v/unstable)](https://packagist.org/packages/{{ config.composer.fullName }})',
-        'packagist.license'       => '[![License](https://poser.pugx.org/{{ config.composer.fullName }}/v/license)](https://packagist.org/packages/{{ config.composer.fullName }})',
-        'packagist.downloads'     => '[![Total Downloads](https://poser.pugx.org/{{ config.composer.fullName }}/downloads)](https://packagist.org/packages/{{ config.composer.fullName }})',
-        'versioneye.dependencies' => '[![Dependency Status](https://www.versioneye.com/php/{{ config.vendor.name }}:{{ config.package.name }}/dev-master/badge.svg)](https://www.versioneye.com/php/{{ config.vendor.name }}:{{ config.package.name }}/dev-master)',
-        'travisci.build'          => '[![Build Status](https://img.shields.io/travis/{{ config.github.name }}.svg)](https://travis-ci.org/{{ config.github.name }})',
-    ];
-
     public function renderBadges()
     {
         $badges = $this->badges;
@@ -125,7 +112,7 @@ class ReadmeGoal extends TemplateGoal
         $res = '';
         foreach ($badges as $badge => $tpl) {
             if (!$tpl) {
-                $tpl = $this->known_badges[$badge];
+                $tpl = $this->markdownBadges[$badge];
             }
             if ($tpl === 'disabled') {
                 continue;
@@ -140,8 +127,6 @@ class ReadmeGoal extends TemplateGoal
     {
         return $this->getTwig()->render($tpl, ['config' => $this->getConfig()]);
     }
-
-    protected $_twig;
 
     public function getTwig()
     {
