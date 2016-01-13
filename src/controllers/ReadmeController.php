@@ -73,7 +73,7 @@ class ReadmeController extends \hidev\controllers\TemplateController
         $view = Yii::$app->getView();
         $tpl = Helper::file2template($file);
         try {
-            $res = $view->render($tpl, ['config' => $this->config]);
+            $res = $view->render($tpl, ['config' => $this->takeConfig()]);
         } catch (\Exception $e) {
             $res = '';
         }
@@ -105,7 +105,7 @@ class ReadmeController extends \hidev\controllers\TemplateController
         if (!$badges) {
             return '';
         }
-        if (!$this->package->getPackageManager()->getConfiguration()->getRequire()) {
+        if (!$this->takeGoal('package')->getPackageManager()->getConfiguration()->getRequire()) {
             unset($badges['versioneye.dependencies']);
         }
         $res = '';
@@ -124,7 +124,7 @@ class ReadmeController extends \hidev\controllers\TemplateController
 
     public function renderBadge($tpl)
     {
-        return $this->getTwig()->render($tpl, ['config' => $this->getConfig()]);
+        return $this->getTwig()->render($tpl, ['config' => $this->takeConfig()]);
     }
 
     public function getTwig()
