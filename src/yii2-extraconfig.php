@@ -13,23 +13,23 @@ return [
     'components' => [
         'config' => [
             'readme' => [
-                'class'          => 'hidev\readme\goals\ReadmeGoal',
+                'class'          => 'hidev\readme\controllers\ReadmeController',
                 'markdownBadges' => [
                     'github.version'          => '[![GitHub version](https://badge.fury.io/gh/{{ config.github.vendor }}%2F{{ config.github.package }}.svg)](https://badge.fury.io/gh/{{ config.github.vendor }}%2F{{ config.github.package }})',
                     'versioneye.dependencies' => '[![Dependency Status](https://www.versioneye.com/php/{{ config.vendor.name }}:{{ config.package.name }}/dev-master/badge.svg)](https://www.versioneye.com/php/{{ config.vendor.name }}:{{ config.package.name }}/dev-master)',
                 ],
             ],
             'README' => [
-                'class' => 'hidev\readme\goals\ReadmeTextGoal',
+                'class' => 'hidev\readme\controllers\ReadmeTextController',
             ],
             'README.txt' => [
-                'class' => 'hidev\readme\goals\ReadmeTextGoal',
+                'class' => 'hidev\readme\controllers\ReadmeTextController',
             ],
             'README.md' => [
-                'class' => 'hidev\readme\goals\ReadmeMarkdownGoal',
+                'class' => 'hidev\readme\controllers\ReadmeMarkdownController',
             ],
             'README.markdown' => [
-                'class' => 'hidev\readme\goals\ReadmeMarkdownGoal',
+                'class' => 'hidev\readme\controllers\ReadmeMarkdownController',
             ],
             'views' => [
                 '@hidev/readme/views',

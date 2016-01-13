@@ -9,12 +9,12 @@
  * @copyright Copyright (c) 2015, HiQDev (http://hiqdev.com/)
  */
 
-namespace hidev\readme\goals;
+namespace hidev\readme\controllers;
 
 /**
  * Goal for README.txt file.
  */
-class ReadmeTextGoal extends \hidev\goals\TemplateGoal
+class ReadmeTextController extends \hidev\controllers\TemplateController
 {
     public function getTemplate()
     {

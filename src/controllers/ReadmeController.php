@@ -9,16 +9,15 @@
  * @copyright Copyright (c) 2015, HiQDev (http://hiqdev.com/)
  */
 
-namespace hidev\readme\goals;
+namespace hidev\readme\controllers;
 
-use hidev\goals\TemplateGoal;
 use hidev\helpers\Helper;
 use Yii;
 
 /**
  * Goal for README.
  */
-class ReadmeGoal extends TemplateGoal
+class ReadmeController extends \hidev\controllers\TemplateController
 {
     protected $_twig;
 
@@ -62,7 +61,7 @@ class ReadmeGoal extends TemplateGoal
     public function renderSection($section, $default = null)
     {
         $file = 'readme/' . str_replace(' ', '', $section);
-        $path = Yii::getAlias("@source/docs/$file.md");
+        $path = Yii::getAlias("@prjdir/docs/$file.md");
         $text = file_exists($path) ? file_get_contents($path) : $this->getSection($file, $default);
         $text = trim($text);
 

@@ -9,12 +9,12 @@
  * @copyright Copyright (c) 2015, HiQDev (http://hiqdev.com/)
  */
 
-namespace hidev\readme\goals;
+namespace hidev\readme\controllers;
 
 /**
  * Goal for README.md file.
  */
-class ReadmeMarkdownGoal extends \hidev\goals\TemplateGoal
+class ReadmeMarkdownController extends \hidev\controllers\TemplateController
 {
     public function getTemplate()
     {
@@ -28,6 +28,6 @@ class ReadmeMarkdownGoal extends \hidev\goals\TemplateGoal
 
     public function getReadme()
     {
-        return $this->getConfig()->get('readme');
+        return $this->getGoal('readme');
     }
 }
