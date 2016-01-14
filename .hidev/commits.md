@@ -3,6 +3,16 @@ hiqdev/hidev-readme commits history
 
 ## Under development
 
+    - 8cd02be 2016-01-14 redone to composer-extension-plugin from plugin-manager (sol@hiqdev.com)
+    - fd08580 2016-01-14 still debugging (sol@hiqdev.com)
+    - 3b65f7a 2016-01-14 debugging travis (sol@hiqdev.com)
+- Changed goals -> controllers
+    - cc14a66 2016-01-13 renamed get -> take (sol@hiqdev.com)
+    - 4cae11b 2016-01-13 redone goals to controllers (sol@hiqdev.com)
+- Changed: redone with yii2-extraconfig
+    - f0a4063 2016-01-13 removed Plugin in favour of extraconfig (sol@hiqdev.com)
+    - 1bc87ce 2016-01-06 changed config structure (sol@hiqdev.com)
+    - 47d1af3 2016-01-06 redoing with yii2-extraconfig (sol@hiqdev.com)
 
 ## 0.2.0 2015-12-23
 
