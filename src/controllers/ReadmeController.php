@@ -6,7 +6,7 @@
  * @link      https://github.com/hiqdev/hidev-readme
  * @package   hidev-readme
  * @license   BSD-3-Clause
- * @copyright Copyright (c) 2015, HiQDev (http://hiqdev.com/)
+ * @copyright Copyright (c) 2015-2016, HiQDev (http://hiqdev.com/)
  */
 
 namespace hidev\readme\controllers;
@@ -124,7 +124,7 @@ class ReadmeController extends \hidev\controllers\TemplateController
 
     public function renderBadge($tpl)
     {
-        error_log( "BADGE: '$tpl'\n" );
+        error_log("BADGE: '$tpl'\n");
         return $this->getTwig()->render($tpl, ['config' => $this->takeConfig()]);
     }
 
