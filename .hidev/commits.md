@@ -3,6 +3,9 @@ hiqdev/hidev-readme commits history
 
 ## Under development
 
+- Fixed tests
+    - 9e9810e 2016-01-14 fixed tests (sol@hiqdev.com)
+    - d99c6f2 2016-01-14 removed debug logging (sol@hiqdev.com)
     - 5f3a4b2 2016-01-14 changed hidev-travis-ci -> hidev-travis (sol@hiqdev.com)
     - fd08580 2016-01-14 still debugging (sol@hiqdev.com)
     - 3b65f7a 2016-01-14 debugging travis (sol@hiqdev.com)

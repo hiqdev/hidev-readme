@@ -3,6 +3,7 @@ hiqdev/hidev-readme changelog
 
 ## Under development
 
+- Fixed tests
 - Changed goals -> controllers
 - Changed: redone with yii2-extraconfig
 
