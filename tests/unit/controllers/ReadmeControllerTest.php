@@ -9,23 +9,23 @@
  * @copyright Copyright (c) 2015-2016, HiQDev (http://hiqdev.com/)
  */
 
-namespace hidev\readme\tests\unit\goals;
+namespace hidev\readme\tests\unit\controllers;
 
-use hidev\readme\goals\ReadmeGoal;
+use hidev\readme\controllers\ReadmeController;
 
 /**
- * Readme Goal test class.
+ * Readme Controller test class.
  */
-class ReadmeGoalTest extends \PHPUnit_Framework_TestCase
+class ReadmeControllerTest extends \PHPUnit_Framework_TestCase
 {
     /**
-     * @var ReadmeGoal
+     * @var ReadmeController
      */
     protected $object;
 
     protected function setUp()
     {
-        $this->object = new ReadmeGoal('README', null);
+        $this->object = new ReadmeController('README', null);
     }
 
     protected function tearDown()
