@@ -124,6 +124,7 @@ class ReadmeController extends \hidev\controllers\TemplateController
 
     public function renderBadge($tpl)
     {
+        print "BADGE: '$tpl'\n";
         return $this->getTwig()->render($tpl, ['config' => $this->takeConfig()]);
     }
 
