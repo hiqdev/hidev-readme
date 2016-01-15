@@ -1,7 +1,7 @@
 hiqdev/hidev-readme commits history
 -----------------------------------
 
-## Under development
+## 0.3.0 2016-01-15
 
 - Fixed tests
     - 9e9810e 2016-01-14 fixed tests (sol@hiqdev.com)

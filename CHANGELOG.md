@@ -1,7 +1,7 @@
 hiqdev/hidev-readme changelog
 -----------------------------
 
-## Under development
+## 0.3.0 2016-01-15
 
 - Fixed tests
 - Changed goals -> controllers
