@@ -105,7 +105,8 @@ class ReadmeController extends \hidev\controllers\TemplateController
         if (!$badges) {
             return '';
         }
-        if (!$this->takeGoal('package')->getPackageManager()->getConfiguration()->getRequire()) {
+        $pm = $this->takeGoal('package')->getPackageManager();
+        if (!$pm || !$pm->getConfiguration()->getRequire()) {
             unset($badges['versioneye.dependencies']);
         }
         $res = '';
