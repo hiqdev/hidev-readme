@@ -1,6 +1,10 @@
 hiqdev/hidev-readme changelog
 -----------------------------
 
+## 0.3.1 2016-02-19
+
+- Fixed to work when no package manager available
+
 ## 0.3.0 2016-01-15
 
 - Fixed tests

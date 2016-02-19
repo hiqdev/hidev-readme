@@ -1,6 +1,12 @@
 hiqdev/hidev-readme commits history
 -----------------------------------
 
+## 0.3.1 2016-02-19
+
+- Fixed to work when no package manager available
+    - c311942 2016-02-19 rehideved (sol@hiqdev.com)
+    - 9d00cf9 2016-02-19 fixed to work when no package manager available (sol@hiqdev.com)
+
 ## 0.3.0 2016-01-15
 
 - Fixed tests
