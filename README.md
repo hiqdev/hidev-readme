@@ -6,10 +6,11 @@ HiDev README
 [![Latest Stable Version](https://poser.pugx.org/hiqdev/hidev-readme/v/stable)](https://packagist.org/packages/hiqdev/hidev-readme)
 [![Total Downloads](https://poser.pugx.org/hiqdev/hidev-readme/downloads)](https://packagist.org/packages/hiqdev/hidev-readme)
 [![Build Status](https://img.shields.io/travis/hiqdev/hidev-readme.svg)](https://travis-ci.org/hiqdev/hidev-readme)
-[![Code Coverage](https://scrutinizer-ci.com/g/hiqdev/hidev-readme/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/hiqdev/hidev-readme/?branch=master)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/hiqdev/hidev-readme/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/hiqdev/hidev-readme/?branch=master)
+[![Scrutinizer Code Coverage](https://img.shields.io/scrutinizer/coverage/g/hiqdev/hidev-readme.svg)](https://scrutinizer-ci.com/g/hiqdev/hidev-readme/)
+[![Scrutinizer Code Quality](https://img.shields.io/scrutinizer/g/hiqdev/hidev-readme.svg)](https://scrutinizer-ci.com/g/hiqdev/hidev-readme/)
 
 [HiDev](https://github.com/hiqdev/hidev) is a task runner, code generator and build tool for easier continuos integration.
+
 This plugin enables README generation support for HiDev.
 
 Provides README generation:

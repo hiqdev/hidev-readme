@@ -1,13 +1,13 @@
 package:
     type:           yii2-extension
     name:           hidev-readme
-    namespace:      hidev\readme
-    headline:       HiDev README
     title:          README plugin for HiDev
+    headline:       HiDev README
     keywords:       readme, hidev, plugin
-    year:           2015
+    namespace:      hidev\readme
     description:    |
         [HiDev](https://github.com/hiqdev/hidev) is a task runner, code generator and build tool for easier continuos integration.
+
         This plugin enables README generation support for HiDev.
 
         Provides README generation:
