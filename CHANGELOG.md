@@ -1,6 +1,10 @@
 hiqdev/hidev-readme changelog
 -----------------------------
 
+## 0.3.2 2016-03-25
+
+- Fixed badges
+
 ## 0.3.1 2016-02-19
 
 - Fixed to work when no package manager available

@@ -1,6 +1,11 @@
 hiqdev/hidev-readme commits history
 -----------------------------------
 
+## 0.3.2 2016-03-25
+
+- Fixed badges
+    - b4c5544 2016-03-24 fixed badges (sol@hiqdev.com)
+
 ## 0.3.1 2016-02-19
 
 - Fixed to work when no package manager available
