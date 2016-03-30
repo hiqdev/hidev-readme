@@ -1,6 +1,12 @@
 hiqdev/hidev-readme commits history
 -----------------------------------
 
+## 0.3.3 2016-03-30
+
+- Changed `extension-config` <- `yii2-extraconfig`
+    - e1127c7 2016-03-30 redoing to `extension-config` <- `yii2-extraconfig` (sol@hiqdev.com)
+    - 672f1c1 2016-03-30 redoing to `extension-config` <- `yii2-extraconfig` (sol@hiqdev.com)
+
 ## 0.3.2 2016-03-25
 
 - Fixed badges

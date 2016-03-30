@@ -1,6 +1,10 @@
 hiqdev/hidev-readme changelog
 -----------------------------
 
+## 0.3.3 2016-03-30
+
+- Changed `extension-config` <- `yii2-extraconfig`
+
 ## 0.3.2 2016-03-25
 
 - Fixed badges
