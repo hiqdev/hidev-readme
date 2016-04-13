@@ -43,8 +43,8 @@
         }
     ],
     "require-dev": {
-        "hiqdev/hidev": "*@dev",
-        "hiqdev/composer-extension-plugin": "*@dev"
+        "hiqdev/hidev": "dev-master",
+        "hiqdev/composer-extension-plugin": "dev-master"
     },
     "autoload": {
         "psr-4": {
@@ -55,5 +55,11 @@
         "extension-plugin": {
             "hidev-config": "src/hidev-config.php"
         }
-    }
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.hiqdev.com"
+        }
+    ]
 }
