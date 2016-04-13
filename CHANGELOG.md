@@ -1,6 +1,11 @@
 hiqdev/hidev-readme changelog
 -----------------------------
 
+## Under development
+
+- Fixed build with asset-packagist
+- Changed to `hidev-config` <- `extension-config`
+
 ## 0.3.3 2016-03-30
 
 - Changed `extension-config` <- `yii2-extraconfig`

@@ -1,6 +1,15 @@
 hiqdev/hidev-readme commits history
 -----------------------------------
 
+## Under development
+
+- Fixed build with asset-packagist
+    - 9a35cbe 2016-04-13 fixed require for `hiqdev/composer-extension-plugin` (sol@hiqdev.com)
+    - 1d1dd9e 2016-04-13 + require yiisoft/yii2/Yii.php in `tests/_bootstrap.php` (sol@hiqdev.com)
+    - 0d10826 2016-04-13 fixed build with asset-packagist (sol@hiqdev.com)
+- Changed to `hidev-config` <- `extension-config`
+    - 9eebd97 2016-04-13 redone to `hidev-config` <- `extension-config` (sol@hiqdev.com)
+
 ## 0.3.3 2016-03-30
 
 - Changed `extension-config` <- `yii2-extraconfig`

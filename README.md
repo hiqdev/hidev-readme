@@ -8,6 +8,7 @@ HiDev README
 [![Build Status](https://img.shields.io/travis/hiqdev/hidev-readme.svg)](https://travis-ci.org/hiqdev/hidev-readme)
 [![Scrutinizer Code Coverage](https://img.shields.io/scrutinizer/coverage/g/hiqdev/hidev-readme.svg)](https://scrutinizer-ci.com/g/hiqdev/hidev-readme/)
 [![Scrutinizer Code Quality](https://img.shields.io/scrutinizer/g/hiqdev/hidev-readme.svg)](https://scrutinizer-ci.com/g/hiqdev/hidev-readme/)
+[![Dependency Status](https://www.versioneye.com/php/hiqdev:hidev-readme/dev-master/badge.svg)](https://www.versioneye.com/php/hiqdev:hidev-readme/dev-master)
 
 [HiDev](https://github.com/hiqdev/hidev) is a task runner, code generator and build tool for easier continuos integration.
 
