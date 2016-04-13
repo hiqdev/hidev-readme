@@ -3,7 +3,8 @@ hiqdev/hidev-readme commits history
 
 ## Under development
 
-- Fixed build with asset-packagist
+- Fixed build with asset-packagist and proper requires
+    - 0aed39c 2016-04-13 fixed require for `hiqdev/composer-extension-plugin` again (sol@hiqdev.com)
     - 9a35cbe 2016-04-13 fixed require for `hiqdev/composer-extension-plugin` (sol@hiqdev.com)
     - 1d1dd9e 2016-04-13 + require yiisoft/yii2/Yii.php in `tests/_bootstrap.php` (sol@hiqdev.com)
     - 0d10826 2016-04-13 fixed build with asset-packagist (sol@hiqdev.com)
