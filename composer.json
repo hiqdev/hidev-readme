@@ -46,8 +46,7 @@
         "hiqdev/composer-extension-plugin": "^0.0.6"
     },
     "require-dev": {
-        "hiqdev/hidev": "dev-master",
-        "hiqdev/composer-extension-plugin": "dev-master"
+        "hiqdev/hidev": "dev-master"
     },
     "autoload": {
         "psr-4": {
