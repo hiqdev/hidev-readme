@@ -1,7 +1,7 @@
 hiqdev/hidev-readme changelog
 -----------------------------
 
-## Under development
+## 0.3.4 2016-04-14
 
 - Fixed build with asset-packagist and proper requires
 - Changed to `hidev-config` <- `extension-config`

@@ -1,7 +1,7 @@
 hiqdev/hidev-readme commits history
 -----------------------------------
 
-## Under development
+## 0.3.4 2016-04-14
 
 - Fixed build with asset-packagist and proper requires
     - 0aed39c 2016-04-13 fixed require for `hiqdev/composer-extension-plugin` again (sol@hiqdev.com)
