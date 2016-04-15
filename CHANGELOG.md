@@ -1,6 +1,10 @@
 hiqdev/hidev-readme changelog
 -----------------------------
 
+## 0.3.5 2016-04-15
+
+- Fixed `hiqdev/composer-extension-plugin` version constraint
+
 ## 0.3.4 2016-04-14
 
 - Fixed build with asset-packagist and proper requires
