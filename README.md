@@ -12,9 +12,8 @@ HiDev README
 
 [HiDev](https://github.com/hiqdev/hidev) is a task runner, code generator and build tool for easier continuos integration.
 
-This plugin enables README generation support for HiDev.
+This plugin enables README generation support for HiDev:
 
-Provides README generation:
 - templates
 - sections
 - badges

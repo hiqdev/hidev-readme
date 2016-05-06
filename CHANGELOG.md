@@ -1,6 +1,10 @@
 hiqdev/hidev-readme changelog
 -----------------------------
 
+## 0.3.6 2016-05-06
+
+- Changed `@prjdir` -> `@root`
+
 ## 0.3.5 2016-04-15
 
 - Fixed `hiqdev/composer-extension-plugin` version constraint

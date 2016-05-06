@@ -1,6 +1,12 @@
 hiqdev/hidev-readme commits history
 -----------------------------------
 
+## 0.3.6 2016-05-06
+
+- Changed `@prjdir` -> `@root`
+    - 2938ace 2016-05-06 redone to locally installed hidev plugins (sol@hiqdev.com)
+    - 451e624 2016-05-06 changed `@prjdir` -> `@root` (sol@hiqdev.com)
+
 ## 0.3.5 2016-04-15
 
 - Fixed `hiqdev/composer-extension-plugin` version constraint
