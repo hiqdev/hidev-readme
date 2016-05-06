@@ -61,7 +61,7 @@ class ReadmeController extends \hidev\controllers\TemplateController
     public function renderSection($section, $default = null)
     {
         $file = 'readme/' . str_replace(' ', '', $section);
-        $path = Yii::getAlias("@prjdir/docs/$file.md");
+        $path = Yii::getAlias("@root/docs/$file.md");
         $text = file_exists($path) ? file_get_contents($path) : $this->getSection($file, $default);
         $text = trim($text);
 
