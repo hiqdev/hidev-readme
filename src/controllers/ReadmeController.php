@@ -91,7 +91,7 @@ class ReadmeController extends \hidev\controllers\TemplateController
 
     public function getSections()
     {
-        return $this->sections ?: ['Requirements', 'Installation', 'Idea', 'Configuration', 'Basic Usage', 'Usage', 'Support', 'License', 'Acknowledgments'];
+        return $this->sections ?: ['Requirements', 'Installation', 'Idea', 'Configuration', 'Basic Usage', 'Usage', 'Support', 'License', 'Acknowledgements', 'Acknowledgments'];
     }
 
     /**
