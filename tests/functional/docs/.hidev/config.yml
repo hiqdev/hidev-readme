@@ -1,0 +1,13 @@
+package:
+    type:           project
+    name:           new-test-package
+    title:          New Test Package
+    keywords:       new, test, package
+    year:           2015-2016
+
+vendor:
+    name:           the-vendor
+    authors:
+        sol:
+            name:       Andrii Vasyliev
+            email:      sol@hiqdev.com

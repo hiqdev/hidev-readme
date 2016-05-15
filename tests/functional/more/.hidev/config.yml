@@ -1,0 +1,16 @@
+package:
+    type:           project
+    name:           new-test-package
+    headline:       Package
+    title:          New Test Package
+    keywords:       new, test, package
+    license:        MIT
+    years:          2014-2016
+    description:    The project longer decription
+
+vendor:
+    name:           the-vendor
+    authors:
+        sol:
+            name:       Andrii Vasyliev
+            email:      sol@hiqdev.com

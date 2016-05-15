@@ -9,14 +9,14 @@
  * @copyright Copyright (c) 2015-2016, HiQDev (http://hiqdev.com/)
  */
 
-namespace base;
+namespace hidev\readme\tests\functinal;
 
 use hidev\tests\functional\Tester;
 
 class ReadmeTest extends \PHPUnit_Framework_TestCase
 {
     /**
-     * @var \FunctionalTester
+     * @var Tester
      */
     protected $tester;
 
@@ -35,15 +35,10 @@ class ReadmeTest extends \PHPUnit_Framework_TestCase
      */
     public function testMinimal()
     {
-        $this->tester->hidev('init the-vendor/new-test-package --norequire --year=2014');
+        $dir = __DIR__ . DIRECTORY_SEPARATOR . 'minimal';
+        $this->tester->config($dir . '/.hidev/config.yml');
         $this->tester->hidev('README.md');
-        $this->tester->assertFileHas('README.md', [
-            "New Test Package\n================",
-            "\n\n## License\n\n",
-            'This project is released under the terms of the No license',
-            'Read more [here](http://choosealicense.com/licenses/no-license).',
-            'Copyright © 2014-' . date('Y') . ', The Vendor',
-        ]);
+        $this->tester->assertFiles($dir, ['.']);
     }
 
     /**
@@ -51,16 +46,10 @@ class ReadmeTest extends \PHPUnit_Framework_TestCase
      */
     public function testMore()
     {
-        $this->tester->hidev('init the-vendor/new-test-package --norequire --headline=Package --license=MIT --year=2014 "--description=The project longer decription"');
+        $dir = __DIR__ . DIRECTORY_SEPARATOR . 'more';
+        $this->tester->config($dir . '/.hidev/config.yml');
         $this->tester->hidev('README.md');
-        $this->tester->assertFileHas('README.md', [
-            "Package\n=======",
-            '**New Test Package**',
-            'The project longer decription',
-            '## License',
-            'This project is released under the terms of the MIT [license](LICENSE)',
-            'Read more [here](http://choosealicense.com/licenses/mit).',
-        ]);
+        $this->tester->assertFiles($dir, ['.']);
     }
 
     /**
@@ -68,11 +57,11 @@ class ReadmeTest extends \PHPUnit_Framework_TestCase
      */
     public function testDocs()
     {
-        $this->tester->hidev('init the-vendor/new-test-package --norequire --year=2015');
-        $this->tester->writeFile('docs/readme/Usage.md', "Usage instructions.\nIn multiple lines.");
+        $dir = __DIR__ . DIRECTORY_SEPARATOR . 'docs';
+        $this->tester->config($dir . '/.hidev/config.yml');
+        $this->tester->writeFile('docs/readme/Usage.md', $dir);
+        $this->tester->writeFile('docs/readme/Installation.md', $dir);
         $this->tester->hidev('README.md');
-        $this->tester->assertFileHas('README.md', [
-            "\n\n## Usage\n\nUsage instructions.\nIn multiple lines.\n\n",
-        ]);
+        $this->tester->assertFiles($dir, ['.']);
     }
 }
