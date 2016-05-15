@@ -12,10 +12,14 @@
 namespace hidev\readme\controllers;
 
 /**
- * Goal for README.txt file.
+ * Goal for README.txt file generation.
+ * @author Andrii Vasyliev <sol@hiqdev.com>
  */
 class ReadmeTextController extends \hidev\controllers\TemplateController
 {
+    /**
+     * {@inheritdoc}
+     */
     public function getTemplate()
     {
         return 'readme-txt';

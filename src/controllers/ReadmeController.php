@@ -15,12 +15,20 @@ use hidev\helpers\Helper;
 use Yii;
 
 /**
- * Goal for README.
+ * Goal for README.file generation.
+ * @author Andrii Vasyliev <sol@hiqdev.com>
  */
 class ReadmeController extends \hidev\controllers\TemplateController
 {
+    /**
+     * @var \Twig_Environment
+     */
     protected $_twig;
 
+    /**
+     * Get charset.
+     * @return string
+     */
     public function getCharset()
     {
         return Yii::$app->charset ?: mb_internal_encoding();
@@ -86,6 +94,10 @@ class ReadmeController extends \hidev\controllers\TemplateController
         return $this->sections ?: ['Requirements', 'Installation', 'Idea', 'Configuration', 'Basic Usage', 'Usage', 'Support', 'License', 'Acknowledgments'];
     }
 
+    /**
+     * Render all configured sections.
+     * @return string
+     */
     public function renderSections($sections = null)
     {
         if ($sections === null) {
@@ -99,6 +111,10 @@ class ReadmeController extends \hidev\controllers\TemplateController
         return $res;
     }
 
+    /**
+     * Render all configured badges.
+     * @return string
+     */
     public function renderBadges()
     {
         $badges = $this->badges;
@@ -123,11 +139,20 @@ class ReadmeController extends \hidev\controllers\TemplateController
         return $res ? "\n$res" : '';
     }
 
-    public function renderBadge($tpl)
+    /**
+     * Render badge by given template.
+     * @param string $template string to render.
+     * @return string
+     */
+    public function renderBadge($template)
     {
-        return $this->getTwig()->render($tpl, ['config' => $this->takeConfig()]);
+        return $this->getTwig()->render($template, ['config' => $this->takeConfig()]);
     }
 
+    /**
+     * Twig getter.
+     * @return \Twig_Environment
+     */
     public function getTwig()
     {
         if ($this->_twig === null) {

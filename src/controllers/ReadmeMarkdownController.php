@@ -12,22 +12,34 @@
 namespace hidev\readme\controllers;
 
 /**
- * Goal for README.md file.
+ * Goal for README.md file generation.
+ * @author Andrii Vasyliev <sol@hiqdev.com>
  */
 class ReadmeMarkdownController extends \hidev\controllers\TemplateController
 {
+    /**
+     * {@inheritdoc}
+     */
     public function getTemplate()
     {
         return 'readme-md';
     }
 
+    /**
+     * Twig getter.
+     * @return \Twig_Environment
+     */
     public function getTwig()
     {
         return $this->getReadme()->getTwig();
     }
 
+    /**
+     * Readme goal getter.
+     * @return ReadmeController
+     */
     public function getReadme()
     {
-        return $this->getGoal('readme');
+        return $this->takeGoal('readme');
     }
 }
