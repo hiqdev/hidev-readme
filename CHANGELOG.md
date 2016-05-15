@@ -1,8 +1,9 @@
 hiqdev/hidev-readme changelog
 -----------------------------
 
-## Under development
+## 0.4.0 2016-05-15
 
+- Changed: redone functional tests to new scheme
 - Changed: rearranged config to new scheme
 
 ## 0.3.6 2016-05-06

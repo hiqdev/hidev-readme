@@ -1,8 +1,11 @@
 hiqdev/hidev-readme commits history
 -----------------------------------
 
-## Under development
+## 0.4.0 2016-05-15
 
+- Changed: redone functional tests to new scheme
+    - 31a5e70 2016-05-15 redone functional tests to new scheme (sol@hiqdev.com)
+    - fc1dcb0 2016-05-15 + gitignore runtime (sol@hiqdev.com)
 - Changed: rearranged config to new scheme
     - a247627 2016-05-15 added `Acknowledgements` section (sol@hiqdev.com)
     - f91f0c0 2016-05-15 added phpdocs (sol@hiqdev.com)
