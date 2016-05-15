@@ -1,6 +1,13 @@
 hiqdev/hidev-readme commits history
 -----------------------------------
 
+## Under development
+
+- Changed: rearranged config to new scheme
+    - a247627 2016-05-15 added `Acknowledgements` section (sol@hiqdev.com)
+    - f91f0c0 2016-05-15 added phpdocs (sol@hiqdev.com)
+    - 3c8f0f2 2016-05-15 rearranged config to new scheme (sol@hiqdev.com)
+
 ## 0.3.6 2016-05-06
 
 - Changed `@prjdir` -> `@root`

@@ -1,6 +1,10 @@
 hiqdev/hidev-readme changelog
 -----------------------------
 
+## Under development
+
+- Changed: rearranged config to new scheme
+
 ## 0.3.6 2016-05-06
 
 - Changed `@prjdir` -> `@root`
