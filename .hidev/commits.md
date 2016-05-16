@@ -1,6 +1,11 @@
 hiqdev/hidev-readme commits history
 -----------------------------------
 
+## 0.4.1 2016-05-16
+
+- Added better functional tests
+    - bc573a4 2016-05-16 GREATLY improved functional tests (sol@hiqdev.com)
+
 ## 0.4.0 2016-05-15
 
 - Changed: redone functional tests to new scheme

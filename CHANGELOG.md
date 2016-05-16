@@ -1,6 +1,10 @@
 hiqdev/hidev-readme changelog
 -----------------------------
 
+## 0.4.1 2016-05-16
+
+- Added better functional tests
+
 ## 0.4.0 2016-05-15
 
 - Changed: redone functional tests to new scheme
