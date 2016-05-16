@@ -11,3 +11,8 @@ vendor:
         sol:
             name:       Andrii Vasyliev
             email:      sol@hiqdev.com
+
+aliases:
+    '@hidev/readme': ../../../src
+
+config: '@hidev/readme/config/hidev.php'

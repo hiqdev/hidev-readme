@@ -31,7 +31,7 @@ class ReadmeController extends \hidev\controllers\TemplateController
      */
     public function getCharset()
     {
-        return Yii::$app->charset ?: mb_internal_encoding();
+        return (isset(Yii::$app->charset) ? Yii::$app->charset : null) ?: mb_internal_encoding();
     }
 
     public function renderH($title, $char)

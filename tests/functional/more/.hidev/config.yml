@@ -6,7 +6,10 @@ package:
     keywords:       new, test, package
     license:        MIT
     years:          2014-2016
-    description:    The project longer decription
+    description:    |
+        The project longer decription
+
+        In multiple lines.
 
 vendor:
     name:           the-vendor
@@ -14,3 +17,13 @@ vendor:
         sol:
             name:       Andrii Vasyliev
             email:      sol@hiqdev.com
+
+readme:
+    badges:
+        github.release:
+        github.version:
+
+aliases:
+    '@hidev/readme': ../../../src
+
+config: '@hidev/readme/config/hidev.php'

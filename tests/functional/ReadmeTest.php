@@ -20,6 +20,8 @@ class ReadmeTest extends \PHPUnit_Framework_TestCase
      */
     protected $tester;
 
+    public $clean = false;
+
     protected function setUp()
     {
         $this->tester = new Tester($this);
@@ -30,35 +32,31 @@ class ReadmeTest extends \PHPUnit_Framework_TestCase
         $this->tester = null;
     }
 
+    protected function prepare($subdir)
+    {
+        $dir = __DIR__ . DIRECTORY_SEPARATOR . $subdir;
+        $this->tester->setAlias('@hidev/readme', dirname(dirname(__DIR__)) . '/src');
+        $this->tester->config($dir . '/.hidev/config.yml');
+
+        return $dir;
+    }
+
     /**
-     * Test minimal.
+     * Test defaults.
      */
     public function testMinimal()
     {
-        $dir = __DIR__ . DIRECTORY_SEPARATOR . 'minimal';
-        $this->tester->config($dir . '/.hidev/config.yml');
+        $dir = $this->prepare('minimal');
         $this->tester->hidev('README.md');
         $this->tester->assertFiles($dir, ['.']);
     }
 
     /**
-     * Test options.
+     * Test options: badges, docs and more.
      */
     public function testMore()
     {
-        $dir = __DIR__ . DIRECTORY_SEPARATOR . 'more';
-        $this->tester->config($dir . '/.hidev/config.yml');
-        $this->tester->hidev('README.md');
-        $this->tester->assertFiles($dir, ['.']);
-    }
-
-    /**
-     * Test docs/readme.
-     */
-    public function testDocs()
-    {
-        $dir = __DIR__ . DIRECTORY_SEPARATOR . 'docs';
-        $this->tester->config($dir . '/.hidev/config.yml');
+        $dir = $this->prepare('more');
         $this->tester->writeFile('docs/readme/Usage.md', $dir);
         $this->tester->writeFile('docs/readme/Installation.md', $dir);
         $this->tester->hidev('README.md');
