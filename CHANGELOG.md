@@ -1,6 +1,10 @@
 hiqdev/hidev-readme changelog
 -----------------------------
 
+## 0.4.2 2016-05-21
+
+- Changed: redone to `composer-config-plugin`
+
 ## 0.4.1 2016-05-16
 
 - Added better functional tests
