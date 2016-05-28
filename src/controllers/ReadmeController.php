@@ -141,7 +141,7 @@ class ReadmeController extends \hidev\controllers\TemplateController
 
     /**
      * Render badge by given template.
-     * @param string $template string to render.
+     * @param  string $template string to render.
      * @return string
      */
     public function renderBadge($template)
