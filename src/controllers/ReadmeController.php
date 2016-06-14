@@ -26,6 +26,11 @@ class ReadmeController extends \hidev\controllers\TemplateController
     protected $_twig;
 
     /**
+     * @var array list of sections to render
+     */
+    protected $_sections;
+
+    /**
      * Get charset.
      * @return string
      */
@@ -89,9 +94,26 @@ class ReadmeController extends \hidev\controllers\TemplateController
         return $res ?: $default;
     }
 
+    /**
+     * Set sections list.
+     * @param array $value
+     */
+    public function setSections($value)
+    {
+        $this->_sections = (array) $value;
+    }
+
+    /**
+     * Returns sections list. Returns default list if not set.
+     * @return array
+     */
     public function getSections()
     {
-        return $this->sections ?: ['Requirements', 'Installation', 'Idea', 'Configuration', 'Basic Usage', 'Usage', 'Support', 'License', 'Acknowledgements', 'Acknowledgments'];
+        if (empty($this->_sections)) {
+            $this->_sections = ['Requirements', 'Installation', 'Idea', 'Configuration', 'Basic Usage', 'Usage', 'Support', 'License', 'Acknowledgements', 'Acknowledgments'];
+        }
+
+        return $this->_sections;
     }
 
     /**
@@ -141,7 +163,7 @@ class ReadmeController extends \hidev\controllers\TemplateController
 
     /**
      * Render badge by given template.
-     * @param  string $template string to render.
+     * @param string $template string to render.
      * @return string
      */
     public function renderBadge($template)
