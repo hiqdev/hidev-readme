@@ -1,8 +1,10 @@
 hiqdev/hidev-readme commits history
 -----------------------------------
 
-## [Under development]
+## [0.4.3] - 2016-08-01
 
+- Added use of `chkipper`
+    - [f777729] 2016-08-01 switched to chkipper [sol@hiqdev.com]
 - Fixed preparing sections list
     - [7fb19a2] 2016-06-14 csfixed [sol@hiqdev.com]
     - [5de13dc] 2016-06-14 fixed preparing sections list [sol@hiqdev.com]
@@ -148,3 +150,4 @@ hiqdev/hidev-readme commits history
 [493e2e2]: https://github.com/hiqdev/hidev-readme/commit/493e2e2
 [6adb394]: https://github.com/hiqdev/hidev-readme/commit/6adb394
 [0d12aa3]: https://github.com/hiqdev/hidev-readme/commit/0d12aa3
+[f777729]: https://github.com/hiqdev/hidev-readme/commit/f777729

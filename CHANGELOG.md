@@ -1,8 +1,9 @@
 hiqdev/hidev-readme commits history
 -----------------------------------
 
-## [Under development]
+## [0.4.3] - 2016-08-01
 
+- Added use of `chkipper`
 - Fixed preparing sections list
 
 ## [0.4.2] - 2016-05-21
