@@ -39,22 +39,19 @@ class ReadmeController extends \hidev\controllers\TemplateController
         return (isset(Yii::$app->charset) ? Yii::$app->charset : null) ?: mb_internal_encoding();
     }
 
-    public function renderH($title, $char)
+    public function renderH($title, $prefix)
     {
-        $res = $title . "\n";
-        $res .= str_repeat($char, mb_strlen($title, $this->getCharset()));
-
-        return $res . "\n";
+        return $prefix . ' ' . $title . "\n";
     }
 
     public function renderH1($title)
     {
-        return $this->renderH($title, '=');
+        return $this->renderH($title, '#');
     }
 
     public function renderH2($title)
     {
-        return $this->renderH($title, '-');
+        return $this->renderH($title, '##');
     }
 
     public function renderText($text)
