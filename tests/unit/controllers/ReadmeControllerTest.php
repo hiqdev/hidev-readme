@@ -33,11 +33,11 @@ class ReadmeControllerTest extends \PHPUnit_Framework_TestCase
 
     public function testRenderH1()
     {
-        $this->assertSame("Test\n====\n", $this->object->renderH1('Test'));
+        $this->assertSame("# Test\n", $this->object->renderH1('Test'));
     }
 
     public function testRenderH2()
     {
-        $this->assertSame("Test\n----\n", $this->object->renderH2('Test'));
+        $this->assertSame("## Test\n", $this->object->renderH2('Test'));
     }
 }
