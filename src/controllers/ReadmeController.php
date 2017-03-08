@@ -1,12 +1,11 @@
 <?php
-
-/*
+/**
  * README plugin for HiDev
  *
  * @link      https://github.com/hiqdev/hidev-readme
  * @package   hidev-readme
  * @license   BSD-3-Clause
- * @copyright Copyright (c) 2015-2016, HiQDev (http://hiqdev.com/)
+ * @copyright Copyright (c) 2015-2017, HiQDev (http://hiqdev.com/)
  */
 
 namespace hidev\readme\controllers;
@@ -160,7 +159,7 @@ class ReadmeController extends \hidev\controllers\TemplateController
 
     /**
      * Render badge by given template.
-     * @param string $template string to render.
+     * @param string $template string to render
      * @return string
      */
     public function renderBadge($template)
