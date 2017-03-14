@@ -64,7 +64,8 @@
     },
     "extra": {
         "config-plugin": {
-            "hidev": "src/config/hidev.php"
+            "hidev": "src/config/hidev.php",
+            "tests": "$hidev"
         }
     },
     "repositories": [
