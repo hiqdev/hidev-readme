@@ -15,7 +15,7 @@ use hidev\readme\controllers\ReadmeController;
 /**
  * Readme Controller test class.
  */
-class ReadmeControllerTest extends \PHPUnit_Framework_TestCase
+class ReadmeControllerTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var ReadmeController
