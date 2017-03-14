@@ -12,7 +12,7 @@ namespace hidev\readme\tests\functinal;
 
 use hidev\tests\functional\Tester;
 
-class ReadmeTest extends \PHPUnit_Framework_TestCase
+class ReadmeTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var Tester
