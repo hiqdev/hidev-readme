@@ -1,5 +1,9 @@
 # hiqdev/hidev-readme commits history
 
+## [0.5.1] - 2017-03-23
+
+- Added PHPUnit 6 compatibility ([@SilverFire], [@hiqsol])
+
 ## [0.5.0] - 2017-03-14
 
 - Changed rendering headers to #-prefix style ([@hiqsol])
@@ -73,7 +77,7 @@
 [andreyklochok@gmail.com]: https://github.com/tafid
 [@BladeRoot]: https://github.com/BladeRoot
 [bladeroot@gmail.com]: https://github.com/BladeRoot
-[Under development]: https://github.com/hiqdev/hidev-readme/compare/0.4.3...HEAD
+[Under development]: https://github.com/hiqdev/hidev-readme/compare/0.5.0...HEAD
 [0.4.3]: https://github.com/hiqdev/hidev-readme/compare/0.4.2...0.4.3
 [0.4.2]: https://github.com/hiqdev/hidev-readme/compare/0.4.1...0.4.2
 [0.4.1]: https://github.com/hiqdev/hidev-readme/compare/0.4.0...0.4.1
@@ -88,3 +92,4 @@
 [0.2.0]: https://github.com/hiqdev/hidev-readme/compare/0.0.1...0.2.0
 [0.0.1]: https://github.com/hiqdev/hidev-readme/releases/tag/0.0.1
 [0.5.0]: https://github.com/hiqdev/hidev-readme/compare/0.4.3...0.5.0
+[0.5.1]: https://github.com/hiqdev/hidev-readme/compare/0.5.0...0.5.1

@@ -1,5 +1,16 @@
 # hiqdev/hidev-readme commits history
 
+## [0.5.1] - 2017-03-23
+
+- Added PHPUnit 6 compatibility
+    - [df4472b] 2017-03-23 csfixed [@SilverFire]
+    - [22df705] 2017-03-23 Added PHPUnit 6 compatibility [@SilverFire]
+    - [4f1c319] 2017-03-23 Updated travis config [@SilverFire]
+    - [2f316ca] 2017-03-14 still fixing tests for phpunit 6 [@hiqsol]
+    - [f322251] 2017-03-14 still fixing tests for phpunit 6 [@hiqsol]
+    - [23ee6cc] 2017-03-14 added require-dev phpunit 6 [@hiqsol]
+    - [e61f481] 2017-03-14 fixed tests for phpunit 6 [@hiqsol]
+
 ## [0.5.0] - 2017-03-14
 
 - Changed rendering headers to #-prefix style
@@ -170,7 +181,7 @@
 [2e3680c]: https://github.com/hiqdev/hidev-readme/commit/2e3680c
 [4e5ae8e]: https://github.com/hiqdev/hidev-readme/commit/4e5ae8e
 [2f59571]: https://github.com/hiqdev/hidev-readme/commit/2f59571
-[Under development]: https://github.com/hiqdev/hidev-readme/compare/0.4.3...HEAD
+[Under development]: https://github.com/hiqdev/hidev-readme/compare/0.5.0...HEAD
 [0.4.3]: https://github.com/hiqdev/hidev-readme/compare/0.4.2...0.4.3
 [0.4.2]: https://github.com/hiqdev/hidev-readme/compare/0.4.1...0.4.2
 [0.4.1]: https://github.com/hiqdev/hidev-readme/compare/0.4.0...0.4.1
@@ -185,3 +196,11 @@
 [0.2.0]: https://github.com/hiqdev/hidev-readme/compare/0.0.1...0.2.0
 [0.0.1]: https://github.com/hiqdev/hidev-readme/releases/tag/0.0.1
 [0.5.0]: https://github.com/hiqdev/hidev-readme/compare/0.4.3...0.5.0
+[df4472b]: https://github.com/hiqdev/hidev-readme/commit/df4472b
+[22df705]: https://github.com/hiqdev/hidev-readme/commit/22df705
+[4f1c319]: https://github.com/hiqdev/hidev-readme/commit/4f1c319
+[2f316ca]: https://github.com/hiqdev/hidev-readme/commit/2f316ca
+[f322251]: https://github.com/hiqdev/hidev-readme/commit/f322251
+[23ee6cc]: https://github.com/hiqdev/hidev-readme/commit/23ee6cc
+[e61f481]: https://github.com/hiqdev/hidev-readme/commit/e61f481
+[0.5.1]: https://github.com/hiqdev/hidev-readme/compare/0.5.0...0.5.1
