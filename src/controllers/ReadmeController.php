@@ -53,6 +53,11 @@ class ReadmeController extends \hidev\controllers\TemplateController
         return $this->renderH($title, '##');
     }
 
+    public function renderH3($title)
+    {
+        return $this->renderH($title, '###');
+    }
+
     public function renderText($text)
     {
         $text = trim($text);
