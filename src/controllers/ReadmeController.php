@@ -114,7 +114,7 @@ class ReadmeController extends \hidev\controllers\TemplateController
             $this->_sections = ['Requirements', 'Installation', 'Idea', 'Configuration', 'Basic Usage', 'Usage', 'Support', 'License', 'Acknowledgements', 'Acknowledgments'];
         }
 
-        return $this->_sections;
+        return array_unique($this->_sections);
     }
 
     /**
