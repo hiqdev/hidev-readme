@@ -7,10 +7,16 @@ package:
 
 vendor:
     name:           the-vendor
+    title:          The Vendor
+    homepage:       http://example.com/
     authors:
         sol:
             name:       Andrii Vasyliev
             email:      sol@hiqdev.com
+
+readme:
+    badges:
+        github.release:
 
 aliases:
     '@hidev/readme': ../../../src

@@ -13,6 +13,8 @@ package:
 
 vendor:
     name:           the-vendor
+    title:          The Vendor
+    homepage:       http://example.com/
     authors:
         sol:
             name:       Andrii Vasyliev
