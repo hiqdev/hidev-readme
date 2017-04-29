@@ -9,30 +9,34 @@
  */
 
 return [
+    'controllerMap' => [
+        'README' => [
+            'class' => \hidev\readme\console\ReadmeTextController::class,
+        ],
+        'README.txt' => [
+            'class' => \hidev\readme\console\ReadmeTextController::class,
+        ],
+        'README.md' => [
+            'class' => \hidev\readme\console\ReadmeMarkdownController::class,
+        ],
+        'README.markdown' => [
+            'class' => \hidev\readme\console\ReadmeMarkdownController::class,
+        ],
+    ],
     'components' => [
-        'config' => [
-            'readme' => [
-                'class' => \hidev\readme\controllers\ReadmeController::class,
-                'markdownBadges' => [
-                    'github.release'          => '[![GitHub release](https://img.shields.io/github/release/{{ config.github.full_name }}.svg)](https://github.com/{{ config.github.full_name }}/releases)',
-                    'github.version'          => '[![GitHub version](https://badge.fury.io/gh/{{ config.github.vendor }}%2F{{ config.github.name }}.svg)](https://badge.fury.io/gh/{{ config.github.vendor }}%2F{{ config.github.name }})',
-                    'versioneye.dependencies' => '[![Dependency Status](https://www.versioneye.com/php/{{ config.vendor.name }}:{{ config.package.name }}/dev-master/badge.svg)](https://www.versioneye.com/php/{{ config.vendor.name }}:{{ config.package.name }}/dev-master)',
+        'readme' => [
+            'class' => \hidev\readme\components\Readme::class,
+            'knownBadges' => [
+                'github.release'          => '[![GitHub release](https://img.shields.io/github/release/{{ app.github.full_name }}.svg)](https://github.com/{{ app.github.full_name }}/releases)',
+                'github.version'          => '[![GitHub version](https://badge.fury.io/gh/{{ app.github.vendor }}%2F{{ app.github.name }}.svg)](https://badge.fury.io/gh/{{ app.github.vendor }}%2F{{ app.github.name }})',
+                'versioneye.dependencies' => '[![Dependency Status](https://www.versioneye.com/php/{{ app.vendor.name }}:{{ app.package.name }}/dev-master/badge.svg)](https://www.versioneye.com/php/{{ app.vendor.name }}:{{ app.package.name }}/dev-master)',
+            ],
+        ],
+        'view' => [
+            'theme' => [
+                'pathMap' => [
+                    '@hidev/views' => ['@hidev/readme/views'],
                 ],
-            ],
-            'README' => [
-                'class' => \hidev\readme\controllers\ReadmeTextController::class,
-            ],
-            'README.txt' => [
-                'class' => \hidev\readme\controllers\ReadmeTextController::class,
-            ],
-            'README.md' => [
-                'class' => \hidev\readme\controllers\ReadmeMarkdownController::class,
-            ],
-            'README.markdown' => [
-                'class' => \hidev\readme\controllers\ReadmeMarkdownController::class,
-            ],
-            'views' => [
-                '@hidev/readme/views',
             ],
         ],
     ],

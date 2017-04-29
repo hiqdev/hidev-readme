@@ -8,16 +8,16 @@
  * @copyright Copyright (c) 2015-2017, HiQDev (http://hiqdev.com/)
  */
 
-namespace hidev\readme\controllers;
+namespace hidev\readme\components;
 
 use hidev\helpers\Helper;
 use Yii;
 
 /**
- * Goal for README.file generation.
+ * README generation component.
  * @author Andrii Vasyliev <sol@hiqdev.com>
  */
-class ReadmeController extends \hidev\controllers\TemplateController
+class Readme extends \hidev\base\Component
 {
     /**
      * @var \Twig_Environment
@@ -28,6 +28,10 @@ class ReadmeController extends \hidev\controllers\TemplateController
      * @var array list of sections to render
      */
     protected $_sections;
+
+    public $knownBadges = [];
+
+    public $badges;
 
     /**
      * Get charset.
@@ -84,10 +88,9 @@ class ReadmeController extends \hidev\controllers\TemplateController
 
     public function getSection($file, $default = null)
     {
-        $view = Yii::$app->getView();
-        $tpl = Helper::file2template($file);
+        $tpl = '@hidev/views/' . Helper::file2template($file);
         try {
-            $res = $view->render($tpl, ['config' => $this->takeConfig()]);
+            $res = $this->render($tpl);
         } catch (\Exception $e) {
             $res = '';
         }
@@ -144,14 +147,14 @@ class ReadmeController extends \hidev\controllers\TemplateController
         if (!$badges) {
             return '';
         }
-        $pm = $this->takeGoal('package')->getPackageManager();
+        $pm = $this->take('package')->getPackageManager();
         if (!$pm || !$pm->getConfiguration()->getRequire()) {
             unset($badges['versioneye.dependencies']);
         }
         $res = '';
         foreach ($badges as $badge => $tpl) {
             if (!$tpl) {
-                $tpl = $this->markdownBadges[$badge];
+                $tpl = $this->knownBadges[$badge];
             }
             if ($tpl === 'disabled') {
                 continue;
@@ -169,7 +172,7 @@ class ReadmeController extends \hidev\controllers\TemplateController
      */
     public function renderBadge($template)
     {
-        return $this->getTwig()->render($template, ['config' => $this->takeConfig()]);
+        return $this->getTwig()->render($template, ['app' => Yii::$app]);
     }
 
     /**

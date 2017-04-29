@@ -1,4 +1,4 @@
-This project is released under the terms of the <?= $config->package->license ?> [license](LICENSE).
-Read more [here](<?= $config->license->url ?>).
+This project is released under the terms of the <?= $app->package->license ?> [license](LICENSE).
+Read more [here](<?= $app->license->url ?>).
 
-Copyright © <?= $config->package->years ?>, <?= $config->vendor->titleAndHomepage ?>
+Copyright © <?= $app->package->years ?>, <?= $app->vendor->titleAndHomepage ?>

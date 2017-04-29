@@ -8,7 +8,7 @@
  * @copyright Copyright (c) 2015-2017, HiQDev (http://hiqdev.com/)
  */
 
-namespace hidev\readme\controllers;
+namespace hidev\readme\console;
 
 /**
  * Goal for README.txt file generation.
