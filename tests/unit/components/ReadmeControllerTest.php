@@ -8,23 +8,23 @@
  * @copyright Copyright (c) 2015-2017, HiQDev (http://hiqdev.com/)
  */
 
-namespace hidev\readme\tests\unit\controllers;
+namespace hidev\readme\tests\unit\components;
 
-use hidev\readme\controllers\ReadmeController;
+use hidev\readme\components\Readme;
 
 /**
- * Readme Controller test class.
+ * Readme component test class.
  */
-class ReadmeControllerTest extends \PHPUnit\Framework\TestCase
+class ReadmeTest extends \PHPUnit\Framework\TestCase
 {
     /**
-     * @var ReadmeController
+     * @var Readme
      */
     protected $object;
 
     protected function setUp()
     {
-        $this->object = new ReadmeController('README', null);
+        $this->object = new Readme();
     }
 
     protected function tearDown()
