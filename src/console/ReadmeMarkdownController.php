@@ -1,6 +1,6 @@
 <?php
 /**
- * README plugin for HiDev.
+ * README plugin for HiDev
  *
  * @link      https://github.com/hiqdev/hidev-readme
  * @package   hidev-readme
@@ -11,7 +11,6 @@
 namespace hidev\readme\console;
 
 use hidev\helpers\FileHelper;
-use Yii;
 
 /**
  * Goal for README.md file generation.
