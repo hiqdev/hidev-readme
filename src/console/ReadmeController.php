@@ -10,17 +10,24 @@
 
 namespace hidev\readme\console;
 
+
 /**
- * Goal for README.txt file generation.
+ * README file generation.
  * @author Andrii Vasyliev <sol@hiqdev.com>
  */
-class ReadmeTextController extends \hidev\controllers\TemplateController
+class ReadmeController extends \hidev\base\Controller
 {
-    /**
-     * {@inheritdoc}
-     */
-    public function getTemplate()
+    public $path;
+
+    public $type = 'markdown';
+
+    public function actionIndex()
     {
-        return 'readme-txt';
+        $this->take('readme')->save($this->getPath(), $this->type);
+    }
+
+    public function getPath()
+    {
+        return $this->path ?: $this->id;
     }
 }

@@ -10,6 +10,7 @@
 
 namespace hidev\readme\components;
 
+use hidev\helpers\FileHelper;
 use hidev\helpers\Helper;
 use Yii;
 
@@ -32,6 +33,16 @@ class Readme extends \hidev\base\Component
     public $knownBadges = [];
 
     public $badges;
+
+    public function save($path, $type)
+    {
+        FileHelper::write($path, $this->render($this->getTemplate($type)));
+    }
+
+    public function getTemplate($type)
+    {
+        return 'readme-' . $type;
+    }
 
     /**
      * Get charset.
