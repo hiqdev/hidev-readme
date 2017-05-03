@@ -9,13 +9,15 @@
 [![Scrutinizer Code Quality](https://img.shields.io/scrutinizer/g/hiqdev/hidev-readme.svg)](https://scrutinizer-ci.com/g/hiqdev/hidev-readme/)
 [![Dependency Status](https://www.versioneye.com/php/hiqdev:hidev-readme/dev-master/badge.svg)](https://www.versioneye.com/php/hiqdev:hidev-readme/dev-master)
 
-[HiDev](https://github.com/hiqdev/hidev) is a task runner, code generator and build tool for easier continuos integration.
+[HiDev] is the automation tool mixed with code generator for easier continuous development.
 
-This plugin enables README generation support for HiDev:
+This plugin enables README file generation support for HiDev:
 
 - templates
 - sections
 - badges
+
+[hidev]: https://github.com/hiqdev/hidev
 
 ## Installation
 
