@@ -1,5 +1,24 @@
 # hiqdev/hidev-readme commits history
 
+## [0.6.0] - 2017-05-03
+
+- Redone to new hidev
+    - [510859a] 2017-05-03 csfixed [@hiqsol]
+    - [d579c1d] 2017-05-02 simplified to single controller [@hiqsol]
+    - [971dc1d] 2017-05-01 fixing tests [@hiqsol]
+    - [c42eacc] 2017-04-30 csfixed [@hiqsol]
+    - [36f815a] 2017-04-29 renamed configs to `hidev.yml` in functional tests [@hiqsol]
+    - [bec789d] 2017-04-29 renamed hidev config to `hidev.yml` <- .hidev/config.yml [@hiqsol]
+    - [f0db89b] 2017-04-29 fixed unit tests [@hiqsol]
+    - [0db6e2f] 2017-04-29 basically redone for new hidev [@hiqsol]
+    - [6c31397] 2017-04-20 fixed tests by disabled `E_NOTICE` ??? [@hiqsol]
+    - [410b993] 2017-04-20 removed phpunit 5 compatibility from `tests/_bootstrap` [@hiqsol]
+    - [ec13d3b] 2017-04-19 removed require-dev phpunit [@hiqsol]
+    - [3268f1c] 2017-04-19 csfixed [@hiqsol]
+    - [8cba1db] 2017-04-19 fixed generated README.md [@hiqsol]
+    - [5a6e199] 2017-03-31 quickfixed doubling sections with `array_unique` [@hiqsol]
+    - [131a8c9] 2017-03-30 changed rendering header to simple prefixing [@hiqsol]
+
 ## [0.5.1] - 2017-03-23
 
 - Added PHPUnit 6 compatibility
@@ -181,7 +200,7 @@
 [2e3680c]: https://github.com/hiqdev/hidev-readme/commit/2e3680c
 [4e5ae8e]: https://github.com/hiqdev/hidev-readme/commit/4e5ae8e
 [2f59571]: https://github.com/hiqdev/hidev-readme/commit/2f59571
-[Under development]: https://github.com/hiqdev/hidev-readme/compare/0.5.0...HEAD
+[Under development]: https://github.com/hiqdev/hidev-readme/compare/0.5.1...HEAD
 [0.4.3]: https://github.com/hiqdev/hidev-readme/compare/0.4.2...0.4.3
 [0.4.2]: https://github.com/hiqdev/hidev-readme/compare/0.4.1...0.4.2
 [0.4.1]: https://github.com/hiqdev/hidev-readme/compare/0.4.0...0.4.1
@@ -204,3 +223,19 @@
 [23ee6cc]: https://github.com/hiqdev/hidev-readme/commit/23ee6cc
 [e61f481]: https://github.com/hiqdev/hidev-readme/commit/e61f481
 [0.5.1]: https://github.com/hiqdev/hidev-readme/compare/0.5.0...0.5.1
+[510859a]: https://github.com/hiqdev/hidev-readme/commit/510859a
+[d579c1d]: https://github.com/hiqdev/hidev-readme/commit/d579c1d
+[971dc1d]: https://github.com/hiqdev/hidev-readme/commit/971dc1d
+[c42eacc]: https://github.com/hiqdev/hidev-readme/commit/c42eacc
+[36f815a]: https://github.com/hiqdev/hidev-readme/commit/36f815a
+[bec789d]: https://github.com/hiqdev/hidev-readme/commit/bec789d
+[f0db89b]: https://github.com/hiqdev/hidev-readme/commit/f0db89b
+[0db6e2f]: https://github.com/hiqdev/hidev-readme/commit/0db6e2f
+[6c31397]: https://github.com/hiqdev/hidev-readme/commit/6c31397
+[410b993]: https://github.com/hiqdev/hidev-readme/commit/410b993
+[ec13d3b]: https://github.com/hiqdev/hidev-readme/commit/ec13d3b
+[3268f1c]: https://github.com/hiqdev/hidev-readme/commit/3268f1c
+[8cba1db]: https://github.com/hiqdev/hidev-readme/commit/8cba1db
+[5a6e199]: https://github.com/hiqdev/hidev-readme/commit/5a6e199
+[131a8c9]: https://github.com/hiqdev/hidev-readme/commit/131a8c9
+[0.6.0]: https://github.com/hiqdev/hidev-readme/compare/0.5.1...0.6.0
