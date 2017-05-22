@@ -1,5 +1,10 @@
 # hiqdev/hidev-readme commits history
 
+## [0.6.1] - 2017-05-22
+
+- Removed `README.txt` and `README.markdown` ([@hiqsol])
+- Removed `tests` config ([@hiqsol])
+
 ## [0.6.0] - 2017-05-03
 
 - Redone to new hidev ([@hiqsol])
@@ -98,3 +103,4 @@
 [0.5.0]: https://github.com/hiqdev/hidev-readme/compare/0.4.3...0.5.0
 [0.5.1]: https://github.com/hiqdev/hidev-readme/compare/0.5.0...0.5.1
 [0.6.0]: https://github.com/hiqdev/hidev-readme/compare/0.5.1...0.6.0
+[0.6.1]: https://github.com/hiqdev/hidev-readme/compare/0.6.0...0.6.1
