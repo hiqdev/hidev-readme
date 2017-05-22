@@ -14,15 +14,7 @@ return [
             'class' => \hidev\readme\console\ReadmeController::class,
             'type' => 'text',
         ],
-        'README.txt' => [
-            'class' => \hidev\readme\console\ReadmeController::class,
-            'type' => 'text',
-        ],
         'README.md' => [
-            'class' => \hidev\readme\console\ReadmeController::class,
-            'type' => 'markdown',
-        ],
-        'README.markdown' => [
             'class' => \hidev\readme\console\ReadmeController::class,
             'type' => 'markdown',
         ],
