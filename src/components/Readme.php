@@ -183,7 +183,9 @@ class Readme extends \hidev\base\Component
      */
     public function renderBadge($template)
     {
-        return $this->getTwig()->render($template, ['app' => Yii::$app]);
+        $tpl = $this->getTwig()->createTemplate($template);
+
+        return $tpl->render(['app' => Yii::$app]);
     }
 
     /**
@@ -193,7 +195,7 @@ class Readme extends \hidev\base\Component
     public function getTwig()
     {
         if ($this->_twig === null) {
-            $this->_twig = new \Twig_Environment(new \Twig_Loader_String());
+            $this->_twig = new \Twig_Environment(new \Twig_Loader_Array());
         }
 
         return $this->_twig;
