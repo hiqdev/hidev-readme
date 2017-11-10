@@ -10,7 +10,6 @@
 
 namespace hidev\readme\console;
 
-
 /**
  * README file generation.
  * @author Andrii Vasyliev <sol@hiqdev.com>
