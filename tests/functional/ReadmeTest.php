@@ -8,7 +8,7 @@
  * @copyright Copyright (c) 2015-2017, HiQDev (http://hiqdev.com/)
  */
 
-namespace hidev\readme\tests\functinal;
+namespace hidev\readme\tests\functional;
 
 use hidev\tests\functional\Tester;
 
