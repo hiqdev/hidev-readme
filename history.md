@@ -1,4 +1,12 @@
-# hiqdev/hidev-readme commits history
+# hiqdev/hidev-readme
+
+## [0.6.2] - 2017-11-10
+
+- Fixed to use `Twig_Loader_Array` <- deprecated `Twig_Loader_String`
+    - [52bd183] 2017-11-10 csfixed [@hiqsol]
+    - [7f4d712] 2017-11-10 typo [@hiqsol]
+    - [b7aa55d] 2017-11-10 removed PHP 5.6 and 7.0 from Travis build [@hiqsol]
+    - [85e2882] 2017-11-08 fixed to use `Twig_Loader_Array` <- deprecated Twig_Loader_String [@hiqsol]
 
 ## [0.6.1] - 2017-05-22
 
@@ -208,7 +216,7 @@
 [2e3680c]: https://github.com/hiqdev/hidev-readme/commit/2e3680c
 [4e5ae8e]: https://github.com/hiqdev/hidev-readme/commit/4e5ae8e
 [2f59571]: https://github.com/hiqdev/hidev-readme/commit/2f59571
-[Under development]: https://github.com/hiqdev/hidev-readme/compare/0.5.1...HEAD
+[Under development]: https://github.com/hiqdev/hidev-readme/compare/0.6.1...HEAD
 [0.4.3]: https://github.com/hiqdev/hidev-readme/compare/0.4.2...0.4.3
 [0.4.2]: https://github.com/hiqdev/hidev-readme/compare/0.4.1...0.4.2
 [0.4.1]: https://github.com/hiqdev/hidev-readme/compare/0.4.0...0.4.1
@@ -251,3 +259,8 @@
 [17733b3]: https://github.com/hiqdev/hidev-readme/commit/17733b3
 [e78b862]: https://github.com/hiqdev/hidev-readme/commit/e78b862
 [0.6.1]: https://github.com/hiqdev/hidev-readme/compare/0.6.0...0.6.1
+[52bd183]: https://github.com/hiqdev/hidev-readme/commit/52bd183
+[7f4d712]: https://github.com/hiqdev/hidev-readme/commit/7f4d712
+[b7aa55d]: https://github.com/hiqdev/hidev-readme/commit/b7aa55d
+[85e2882]: https://github.com/hiqdev/hidev-readme/commit/85e2882
+[0.6.2]: https://github.com/hiqdev/hidev-readme/compare/0.6.1...0.6.2

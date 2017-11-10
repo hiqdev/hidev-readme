@@ -1,4 +1,8 @@
-# hiqdev/hidev-readme commits history
+# hiqdev/hidev-readme
+
+## [0.6.2] - 2017-11-10
+
+- Fixed to use `Twig_Loader_Array` <- deprecated `Twig_Loader_String` ([@hiqsol])
 
 ## [0.6.1] - 2017-05-22
 
@@ -86,7 +90,7 @@
 [andreyklochok@gmail.com]: https://github.com/tafid
 [@BladeRoot]: https://github.com/BladeRoot
 [bladeroot@gmail.com]: https://github.com/BladeRoot
-[Under development]: https://github.com/hiqdev/hidev-readme/compare/0.5.1...HEAD
+[Under development]: https://github.com/hiqdev/hidev-readme/compare/0.6.1...HEAD
 [0.4.3]: https://github.com/hiqdev/hidev-readme/compare/0.4.2...0.4.3
 [0.4.2]: https://github.com/hiqdev/hidev-readme/compare/0.4.1...0.4.2
 [0.4.1]: https://github.com/hiqdev/hidev-readme/compare/0.4.0...0.4.1
@@ -104,3 +108,4 @@
 [0.5.1]: https://github.com/hiqdev/hidev-readme/compare/0.5.0...0.5.1
 [0.6.0]: https://github.com/hiqdev/hidev-readme/compare/0.5.1...0.6.0
 [0.6.1]: https://github.com/hiqdev/hidev-readme/compare/0.6.0...0.6.1
+[0.6.2]: https://github.com/hiqdev/hidev-readme/compare/0.6.1...0.6.2
