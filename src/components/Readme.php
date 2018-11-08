@@ -159,9 +159,6 @@ class Readme extends \hidev\base\Component
             return '';
         }
         $pm = $this->take('package')->getPackageManager();
-        if (!$pm || !$pm->getConfiguration()->getRequire()) {
-            unset($badges['versioneye.dependencies']);
-        }
         $res = '';
         foreach ($badges as $badge => $tpl) {
             if (!$tpl) {

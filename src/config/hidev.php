@@ -25,7 +25,6 @@ return [
             'knownBadges' => [
                 'github.release'          => '[![GitHub release](https://img.shields.io/github/release/{{ app.github.full_name }}.svg)](https://github.com/{{ app.github.full_name }}/releases)',
                 'github.version'          => '[![GitHub version](https://badge.fury.io/gh/{{ app.github.vendor }}%2F{{ app.github.name }}.svg)](https://badge.fury.io/gh/{{ app.github.vendor }}%2F{{ app.github.name }})',
-                'versioneye.dependencies' => '[![Dependency Status](https://www.versioneye.com/php/{{ app.vendor.name }}:{{ app.package.name }}/dev-master/badge.svg)](https://www.versioneye.com/php/{{ app.vendor.name }}:{{ app.package.name }}/dev-master)',
             ],
         ],
         'view' => [
