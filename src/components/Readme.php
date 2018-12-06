@@ -12,7 +12,7 @@ namespace hidev\readme\components;
 
 use hidev\helpers\FileHelper;
 use hidev\helpers\Helper;
-use Yii;
+use yii\helpers\Yii;
 
 /**
  * README generation component.
@@ -50,7 +50,7 @@ class Readme extends \hidev\base\Component
      */
     public function getCharset()
     {
-        return (isset(Yii::$app->charset) ? Yii::$app->charset : null) ?: mb_internal_encoding();
+        return Yii::getLocaleString();
     }
 
     public function renderH($title, $prefix)
@@ -182,7 +182,7 @@ class Readme extends \hidev\base\Component
     {
         $tpl = $this->getTwig()->createTemplate($template);
 
-        return $tpl->render(['app' => Yii::$app]);
+        return $tpl->render(['app' => $this->app]);
     }
 
     /**
