@@ -161,9 +161,12 @@ class Readme extends \hidev\base\Component
         $res = '';
         foreach ($badges as $badge => $tpl) {
             if (!$tpl) {
+                if (!isset($this->knownBadges[$badge])) {
+                    throw new \Exception("unknown badge: `$badge`");
+                }
                 $tpl = $this->knownBadges[$badge];
             }
-            if ($tpl === 'disabled') {
+            if (empty($tpl) || $tpl === 'disabled') {
                 continue;
             }
             $res .= $this->renderBadge($tpl) . "\n";
