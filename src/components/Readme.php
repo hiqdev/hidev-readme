@@ -158,7 +158,6 @@ class Readme extends \hidev\base\Component
         if (!$badges) {
             return '';
         }
-        $pm = $this->take('package')->getPackageManager();
         $res = '';
         foreach ($badges as $badge => $tpl) {
             if (!$tpl) {
