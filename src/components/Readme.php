@@ -50,7 +50,7 @@ class Readme extends \hidev\base\Component
      */
     public function getCharset()
     {
-        return Yii::getLocaleString();
+        return Yii::getEncoding();
     }
 
     public function renderH($title, $prefix)
