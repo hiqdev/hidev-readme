@@ -125,7 +125,7 @@ class Readme extends \hidev\base\Component
     public function getSections()
     {
         if (empty($this->_sections)) {
-            $this->_sections = ['Requirements', 'Installation', 'Idea', 'Configuration', 'Basic Usage', 'Usage', 'Support', 'License', 'Acknowledgements', 'Acknowledgments'];
+            $this->_sections = ['Requirements', 'Installation', 'Idea', 'Configuration', 'Basic Usage', 'Usage', 'Support', 'Disclaimer', 'License', 'Acknowledgements', 'Acknowledgments'];
         }
 
         return array_unique($this->_sections);
