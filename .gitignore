@@ -1,12 +1,5 @@
-# hidev internals
-/.hidev/composer.json
-/.hidev/composer.lock
-/.hidev/runtime
-/.hidev/vendor
-
 # local config
 /.env
-/hidev-local.yml
 
 # IDE & OS files
 .*.swp
@@ -22,10 +15,10 @@ nbproject
 /composer.lock
 /vendor
 
-# php-cs-fixer cache
+# dynamic files
+.hidev/runtime
 .php_cs.cache
-
-# phpunit generated files
+.phpunit.result.cache
 coverage.clover
 
 # Binaries
@@ -33,5 +26,6 @@ chkipper.phar
 composer.phar
 ocular.phar
 php-cs-fixer.phar
+phpstan.phar
 phpunit-skelgen.phar
 phpunit.phar
