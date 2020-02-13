@@ -36,6 +36,6 @@ return [
         ],
     ],
     'aliases' => [
-        '@hidev/readme' => dirname(__DIR__),
+        '@hidev/readme' => dirname(__DIR__) . '/src',
     ],
 ];
