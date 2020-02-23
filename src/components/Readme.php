@@ -34,9 +34,13 @@ class Readme extends \hidev\base\Component
 
     public $badges;
 
+    public $forceRewrite = false;
+
     public function save($path, $type)
     {
-        FileHelper::write($path, $this->render($this->getTemplate($type)));
+        if ($this->forceRewrite || !file_exists($path)) {
+            FileHelper::write($path, $this->render($this->getTemplate($type)));
+        }
     }
 
     public function getTemplate($type)
