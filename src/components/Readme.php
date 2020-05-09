@@ -21,7 +21,7 @@ use Yii;
 class Readme extends \hidev\base\Component
 {
     /**
-     * @var \Twig_Environment
+     * @var \Twig\Environment
      */
     protected $_twig;
 
@@ -191,12 +191,12 @@ class Readme extends \hidev\base\Component
 
     /**
      * Twig getter.
-     * @return \Twig_Environment
+     * @return \Twig\Environment
      */
     public function getTwig()
     {
         if ($this->_twig === null) {
-            $this->_twig = new \Twig_Environment(new \Twig_Loader_Array());
+            $this->_twig = new \Twig\Environment(new \Twig\Loader\ArrayLoader());
         }
 
         return $this->_twig;
