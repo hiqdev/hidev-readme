@@ -30,7 +30,7 @@ return [
         'view' => [
             'theme' => [
                 'pathMap' => [
-                    '@hidev/views' => ['@hidev/readme/views'],
+                    '@hidev/views' => [dirname(__DIR__) . '/src/views'],
                 ],
             ],
         ],
